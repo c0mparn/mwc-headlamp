@@ -1,0 +1,9 @@
+C:\DEV\MyWinterCar\Headlamp\bin\Release\Headlamp.dll
+C:\DEV\MyWinterCar\Headlamp\bin\Release\Headlamp.pdb
+C:\DEV\MyWinterCar\Headlamp\obj\Release\Headlamp.csproj.AssemblyReference.cache
+C:\DEV\MyWinterCar\Headlamp\obj\Release\Headlamp.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\MyWinterCar\Headlamp\obj\Release\Headlamp.AssemblyInfoInputs.cache
+C:\DEV\MyWinterCar\Headlamp\obj\Release\Headlamp.AssemblyInfo.cs
+C:\DEV\MyWinterCar\Headlamp\obj\Release\Headlamp.csproj.CoreCompileInputs.cache
+C:\DEV\MyWinterCar\Headlamp\obj\Release\Headlamp.dll
+C:\DEV\MyWinterCar\Headlamp\obj\Release\Headlamp.pdb
