@@ -12,6 +12,7 @@ namespace Headlamp
         public override string Name => "Headlamp";
         public override string Author => "c0mparn";
         public override string Version => "1.3.0";
+        public override string Description => "A toggleable headlamp for the player (Press G)";
         public override Game SupportedGames => Game.MyWinterCar;
 
         // Keybind

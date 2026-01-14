@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("c0mparn")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.3.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.3.0+2d00656eb9262c6c69d0cf18dd3e53f8a818a020")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.3.0+dc0ac55f33d3447aef1bef9f8da404c32281a098")]
 [assembly: System.Reflection.AssemblyProductAttribute("Headlamp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Headlamp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.3.0.0")]
