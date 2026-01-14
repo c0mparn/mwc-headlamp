@@ -1,39 +1,46 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>net35</TargetFramework>
     <AssemblyName>Headlamp</AssemblyName>
-    <RootNamespace>Headlamp</RootNamespace>
+    <Version>1.3.0</Version>
+    <Authors>c0mparn</Authors>
     <LangVersion>7.3</LangVersion>
-    <OutputPath>bin\$(Configuration)\</OutputPath>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
-  <ItemGroup>
-    <!-- MelonLoader References -->
-    <Reference Include="MelonLoader">
-      <HintPath>E:\Spel\Steam\SteamLibrary\steamapps\common\My Winter Car\MelonLoader\net35\MelonLoader.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="0Harmony">
-      <HintPath>E:\Spel\Steam\SteamLibrary\steamapps\common\My Winter Car\MelonLoader\net35\0Harmony.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
+  <PropertyGroup>
+    <GamePath>E:\Spel\Steam\SteamLibrary\steamapps\common\My Winter Car</GamePath>
+    <ManagedPath>$(GamePath)\mywintercar_Data\Managed</ManagedPath>
+  </PropertyGroup>
 
-    <!-- Game References -->
-    <Reference Include="Assembly-CSharp">
-      <HintPath>E:\Spel\Steam\SteamLibrary\steamapps\common\My Winter Car\mywintercar_Data\Managed\Assembly-CSharp.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>E:\Spel\Steam\SteamLibrary\steamapps\common\My Winter Car\mywintercar_Data\Managed\UnityEngine.dll</HintPath>
+  <!-- MSCLoader Reference -->
+  <ItemGroup>
+    <Reference Include="MSCLoader">
+      <HintPath>$(ManagedPath)\MSCLoader.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>
 
-  <!-- Auto-copy to Mods folder after build -->
+  <!-- Unity Engine References -->
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>$(ManagedPath)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(ManagedPath)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>$(ManagedPath)\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Copy to Mods folder after build -->
   <Target Name="CopyToMods" AfterTargets="Build">
-    <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" 
-          DestinationFolder="E:\Spel\Steam\SteamLibrary\steamapps\common\My Winter Car\Mods\" />
-    <Message Importance="High" Text="Copied $(AssemblyName).dll to Mods folder!" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(GamePath)\Mods" SkipUnchangedFiles="true" />
+    <Message Text="Copied $(TargetFileName) to $(GamePath)\Mods" Importance="High" />
   </Target>
+
 </Project>

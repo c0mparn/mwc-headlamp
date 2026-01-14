@@ -1,0 +1,10 @@
+C:\DEV\MyWinterCar\Headlamp\bin\Release\net35\Headlamp.dll
+C:\DEV\MyWinterCar\Headlamp\bin\Release\net35\Headlamp.pdb
+C:\DEV\MyWinterCar\Headlamp\obj\Release\net35\Headlamp.csproj.AssemblyReference.cache
+C:\DEV\MyWinterCar\Headlamp\obj\Release\net35\Headlamp.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\MyWinterCar\Headlamp\obj\Release\net35\Headlamp.AssemblyInfoInputs.cache
+C:\DEV\MyWinterCar\Headlamp\obj\Release\net35\Headlamp.AssemblyInfo.cs
+C:\DEV\MyWinterCar\Headlamp\obj\Release\net35\Headlamp.csproj.CoreCompileInputs.cache
+C:\DEV\MyWinterCar\Headlamp\obj\Release\net35\Headlamp.sourcelink.json
+C:\DEV\MyWinterCar\Headlamp\obj\Release\net35\Headlamp.dll
+C:\DEV\MyWinterCar\Headlamp\obj\Release\net35\Headlamp.pdb
